@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.techforb.techforb.dto.AlertDto;
+import com.techforb.techforb.dto.CreateAlertDto;
+import com.techforb.techforb.entity.Alert;
 import com.techforb.techforb.repository.AlertRepository;
 import com.techforb.techforb.services.AlertService;
 
@@ -29,5 +31,16 @@ public class AlertServiceImpl implements AlertService {
             .build();
         })
         .toList();
+    }
+
+    @Override
+    public void create(CreateAlertDto createAlertDto) {
+
+        Alert alertEntity = new Alert();
+        alertEntity.setName(createAlertDto.getName());
+        alertEntity.setQuantity(createAlertDto.getQuantity());
+        alertEntity.setStatus(createAlertDto.getStatus());
+        
+        alertRepository.save(alertEntity);
     }
 }
