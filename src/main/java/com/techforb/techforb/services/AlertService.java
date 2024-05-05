@@ -9,4 +9,5 @@ public interface AlertService {
 
     List<AlertDto> getAll();
     void create(CreateAlertDto createAlertDto); 
+    void delete(Long id);
 }

@@ -43,4 +43,9 @@ public class AlertServiceImpl implements AlertService {
         
         alertRepository.save(alertEntity);
     }
+
+    @Override
+    public void delete(Long id) {
+        alertRepository.deleteById(id);
+    }
 }
