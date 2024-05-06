@@ -1,6 +1,7 @@
 package com.techforb.techforb.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.techforb.techforb.services.PlantService;
@@ -12,6 +13,7 @@ import jakarta.validation.Valid;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,6 +25,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("plants")
+@CrossOrigin(origins = "http://localhost:4200")
 public class PlantaController {
     private PlantService plantService;
 
@@ -30,6 +33,7 @@ public class PlantaController {
         this.plantService = PlantService;
     }
 
+    @ResponseBody
     @GetMapping
     public List<PlantDto> getAPlants() {
         return plantService.getAll();
