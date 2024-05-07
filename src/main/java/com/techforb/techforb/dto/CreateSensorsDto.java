@@ -14,10 +14,22 @@ public class CreateSensorsDto {
     private String name;
 
     @NotEmpty
-    private String iconNumber;
+    private String reading;
 
     @NotEmpty
-    private Long number;
+    private Long numberReading;
+
+    @NotEmpty
+    private String midLevel;
+
+    @NotEmpty
+    private Long numberMid;
+
+    @NotEmpty
+    private String redAlert;
+
+    @NotEmpty
+    private Long numberRedAlert;
 
     @NotEmpty
     private String icon;

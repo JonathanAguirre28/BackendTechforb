@@ -14,9 +14,17 @@ public class SensorsDto {
 
     private String name;
 
-    private String iconNumber;
+    private String reading;
 
-    private Long number;
+    private Long numberReading;
+
+    private String midLevel;
+
+    private Long numberMid;
+
+    private String redAlert;
+
+    private Long numberRedAlert;
 
     private String icon;
 

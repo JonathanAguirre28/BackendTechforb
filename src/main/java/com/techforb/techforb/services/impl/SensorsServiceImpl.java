@@ -25,8 +25,12 @@ public class SensorsServiceImpl implements SensorsService{
             return SensorsDto.builder()
             .id(entity.getId())
             .name(entity.getName())
-            .iconNumber(entity.getIconNumber())
-            .number(entity.getNumber())
+            .reading(entity.getReading())
+            .numberReading(entity.getNumberReading())
+            .midLevel(entity.getMidLevel())
+            .numberMid(entity.getNumberMid())
+            .redAlert(entity.getRedAlert())
+            .numberRedAlert(entity.getNumberRedAlert())
             .icon(entity.getIcon())
             .build();
         })
@@ -38,8 +42,12 @@ public class SensorsServiceImpl implements SensorsService{
 
         Sensors sensorsEntity = new Sensors();
         sensorsEntity.setName(createSensorsDto.getName());
-        sensorsEntity.setIconNumber(createSensorsDto.getIconNumber());
-        sensorsEntity.setNumber(createSensorsDto.getNumber());
+        sensorsEntity.setReading(createSensorsDto.getReading());
+        sensorsEntity.setNumberReading(createSensorsDto.getNumberReading());
+        sensorsEntity.setMidLevel(createSensorsDto.getMidLevel());
+        sensorsEntity.setNumberMid(createSensorsDto.getNumberMid());
+        sensorsEntity.setRedAlert(createSensorsDto.getRedAlert());
+        sensorsEntity.setNumberRedAlert(createSensorsDto.getNumberRedAlert());
         sensorsEntity.setIcon(createSensorsDto.getIcon());
 
         sensorsRepository.save(sensorsEntity);
