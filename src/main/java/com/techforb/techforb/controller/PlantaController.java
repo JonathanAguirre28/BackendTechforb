@@ -56,5 +56,4 @@ public class PlantaController {
     plantService.update(id, updatedPlantDto);
     return ResponseEntity.noContent().build();
 }
-    
 }
