@@ -1,8 +1,11 @@
 # backendtechforb
 
 ############# deploy:https://backendtechforb-422622.rj.r.appspot.com
+
 https://backendtechforb-422622.rj.r.appspot.com/plants
+
 https://backendtechforb-422622.rj.r.appspot.com/sensors
+
 https://backendtechforb-422622.rj.r.appspot.com/alert
 
 <h1 align="left">Hey 👋 What's up?</h1>
