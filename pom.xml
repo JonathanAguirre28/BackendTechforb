@@ -11,7 +11,7 @@
 	<groupId>com.techforb</groupId>
 	<artifactId>techforb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packagin>jar</packagin>
+	<packaging>jar</packaging>
 	<name>techforb</name>
 	<description>proyecto con spring para techforb</description>
 	<properties>
